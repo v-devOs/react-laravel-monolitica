@@ -17,7 +17,7 @@ export const App = () => {
 
     if (loading) {
         return (
-            <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100 flex items-center justify-center">
+            <div className="min-h-screen bg-linear-to-br from-indigo-100 via-purple-50 to-pink-100 flex items-center justify-center">
                 <div className="text-center">
                     <div className="inline-block animate-spin rounded-full h-16 w-16 border-b-4 border-indigo-600 mb-4"></div>
                     <p className="text-xl text-gray-700 font-medium">
@@ -30,10 +30,10 @@ export const App = () => {
 
     if (error) {
         return (
-            <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100 flex items-center justify-center p-4">
+            <div className="min-h-screen bg-linear-to-br from-indigo-100 via-purple-50 to-pink-100 flex items-center justify-center p-4">
                 <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg shadow-lg max-w-md">
                     <div className="flex items-center">
-                        <div className="flex-shrink-0">
+                        <div className="shrink-0">
                             <svg
                                 className="h-6 w-6 text-red-500"
                                 fill="none"
@@ -60,11 +60,11 @@ export const App = () => {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen bg-linear-to-br from-indigo-100 via-purple-50 to-pink-100 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mb-4">
+                    <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-indigo-600 to-purple-600 mb-4">
                         🎬 Lista de Actores
                     </h1>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -91,7 +91,7 @@ export const App = () => {
                                 animation: "fadeInUp 0.6s ease-out forwards",
                             }}
                         >
-                            <div className="h-48 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center relative overflow-hidden">
+                            <div className="h-48 bg-linear-to-br from-indigo-500 to-purple-600 flex items-center justify-center relative overflow-hidden">
                                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
                                 <div className="text-6xl font-bold text-white opacity-90">
                                     {actor.first_name?.charAt(0)}
@@ -153,7 +153,7 @@ export const App = () => {
 
                         {/* Información de página */}
                         <div className="flex items-center gap-2">
-                            <div className="text-center px-4 py-2 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg">
+                            <div className="text-center px-4 py-2 bg-linear-to-r from-indigo-50 to-purple-50 rounded-lg">
                                 <p className="text-sm text-gray-600 mb-1">
                                     Página
                                 </p>
@@ -164,7 +164,7 @@ export const App = () => {
                             <span className="text-2xl text-gray-400 font-light">
                                 /
                             </span>
-                            <div className="text-center px-4 py-2 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg">
+                            <div className="text-center px-4 py-2 bg-linear-to-r from-purple-50 to-pink-50 rounded-lg">
                                 <p className="text-sm text-gray-600 mb-1">
                                     Total
                                 </p>
